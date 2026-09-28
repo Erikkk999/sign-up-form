@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("font/Norse-Bold.woff2") format("woff2"),
+       url("font/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #ffffff;
+}
+
+.page {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  width: 33.5rem;
+}
+
+.logo-container {
+  position: absolute;
+  top: 22%;
+
+  height: 10rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #00000080;
+}
+
+.logo-container img {
+  height: 8.5rem;
+}
+
+.logo-container h1 {
+  color: var(--white);
+  font-family: "Norse";
+  font-size: 6rem;
+}
