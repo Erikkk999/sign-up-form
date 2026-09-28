@@ -38,6 +38,8 @@ input, button, textarea, select {
   --white: #ffffff;
   --off-white: #fafafa;
   --grey: #e0e0e0;
+  --orange: #da8014;
+  --red: #e10000;
 }
 
 .page {
@@ -131,3 +133,47 @@ input {
   border: solid 1px var(--grey);
   border-radius: 0.3rem;
 }
+
+input:focus {
+  outline: solid 1px #0095ff;
+  box-shadow: 0 0 8px #0000006a;
+}
+
+.bottom-container {
+  background-color: var(--off-white);
+  padding: 2rem 0 0 3rem;
+  flex: 1;
+}
+
+button {
+  font-size: 1.1rem;
+  color: var(--white);
+  background-color: var(--orange);
+
+  width: 235px;
+  height: 50px;
+
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 2.2rem;
+
+  box-shadow: 4px 4px 5px var(--grey);
+  cursor: pointer;
+}
+
+span {
+  color: var(--orange);
+}
+
+.bottom-container p {
+  font-size: 1.15rem;
+}
+
+button:hover {
+  background-color: #ff9718;
+}
+
+input:user-invalid {
+  border: solid 1px var(--red);
+}
+
