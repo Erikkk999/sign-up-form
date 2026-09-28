@@ -8,7 +8,11 @@
 
 body {
   font-family: system-ui, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  letter-spacing: -0.6px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,6 +36,7 @@ input, button, textarea, select {
 
 :root {
   --white: #ffffff;
+  --off-white: #fafafa;
 }
 
 .page {
@@ -41,6 +46,7 @@ input, button, textarea, select {
 .image-container {
   position: relative;
   width: 33.5rem;
+  flex-shrink: 0;
 }
 
 .logo-container {
@@ -66,3 +72,21 @@ input, button, textarea, select {
   font-family: "Norse";
   font-size: 6rem;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: var(--white);
+  width: 100%;
+}
+
+.top-container {
+  padding: 10.5rem 0 4rem 3rem;
+  background-color: var(--off-white);
+}
+
+.top-container p + p {
+  padding-top: 1.8rem;
+}
+
